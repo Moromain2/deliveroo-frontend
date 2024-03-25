@@ -1,0 +1,5 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+
+* {
+    box-sizing: border-box;
+}

@@ -1,0 +1,8 @@
+/* === VARIABLES === */
+
+:root {
+    /* Fonts */
+    --regular: "IBM Plex Sans", "Arial", sans-serif;
+    --bold: "IBM Plex Sans Bold", "Arial", sans-serif;
+    --heading: "Stratos Deliveroo", "Arial", sans-serif;
+}
