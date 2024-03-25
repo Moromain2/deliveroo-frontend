@@ -1,6 +1,54 @@
 @import "./assets/css/fonts.css";
 @import "./assets/css/variables.css";
 
+/* === GLOBAL === */
 body {
   font-family: var(--regular);
+  font-size: 16px;
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+/* === Typography === */
+h1,
+h2 {
+  font-family: var(--bold);
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+  margin-bottom: .4em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: var(--grey-300);
+}
+
+@media (min-width: 885px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+}
+
+/* === STRUCTURE === */
+.container {
+  max-width: 1080px;
+  padding: 0 1em;
+  margin: 0 auto;
 }

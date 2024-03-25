@@ -5,4 +5,18 @@
     --regular: "IBM Plex Sans", "Arial", sans-serif;
     --bold: "IBM Plex Sans Bold", "Arial", sans-serif;
     --heading: "Stratos Deliveroo", "Arial", sans-serif;
+
+    /* Colors */
+    --dark: #2e3333;
+    --white: #ffffff;
+    --grey-100: #f3f5f5;
+    --grey-200: #e9ebeb;
+    --grey-300: #868a8a;
+    --blue-1OO: #00CCBC;
+    --blue-200: #bac3c3;
+    --blue-300: #8b9a9b;
+    --accent: #ff8000;
+
+    /* Animation */
+    --transition: all ease-out 250ms;
 }

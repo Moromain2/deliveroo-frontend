@@ -1,0 +1,16 @@
+header {
+    height: 4em;
+    display: flex;
+    border-bottom: 1px solid var(--grey-100);
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .container {
+    width: 100%;
+}
+
+header svg {
+    height: 3em;
+    width: auto;
+}
