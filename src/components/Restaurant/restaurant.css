@@ -59,3 +59,11 @@
         border-radius: .5em;
     }
 }
+
+@media (min-width: 1024px) {
+    .dishes-wrapper {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+}

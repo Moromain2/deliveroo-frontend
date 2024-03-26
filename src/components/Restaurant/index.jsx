@@ -24,36 +24,40 @@ const Restaurant = ({
                     </div>
                 </div>
             </section>
-            <section id="restaurant-menu">
-                <div className="container">
-                    <div className="menu-container">
-                        {restaurant_categories.map((category) => {
-                            // Rendering the category and its corresponding meals if it has any
-                            if (category.meals.length > 0) {
-                                return (
-                                    <div className="category-container">
-                                        <h2>{category.name}</h2>
-                                        {category.meals.map((meal) => {
-                                            return (
-                                                <DishCard
-                                                    dish_name={meal.title}
-                                                    dish_description={meal.description}
-                                                    dish_price={meal.price}
-                                                    dish_image={meal.picture}
-                                                    dish_popular={meal.popular}
-                                                />
-                                            )
-                                        })}
-                                    </div>
-                                )
-                            }
-                        })}
+            <main>
+                <section id="restaurant-menu">
+                    <div className="container">
+                        <div className="menu-container">
+                            {restaurant_categories.map((category) => {
+                                // Rendering the category and its corresponding meals if it has any
+                                if (category.meals.length > 0) {
+                                    return (
+                                        <div className="category-container">
+                                            <h2>{category.name}</h2>
+                                            <div className="dishes-wrapper">
+                                                {category.meals.map((meal) => {
+                                                    return (
+                                                        <DishCard
+                                                            dish_name={meal.title}
+                                                            dish_description={meal.description}
+                                                            dish_price={meal.price}
+                                                            dish_image={meal.picture}
+                                                            dish_popular={meal.popular}
+                                                        />
+                                                    )
+                                                })}
+                                            </div>
+                                        </div>
+                                    )
+                                }
+                            })}
+                        </div>
+                        <div className="basket-container">
+                            <Basket />
+                        </div>
                     </div>
-                    <div className="basket-container">
-                        <Basket />
-                    </div>
-                </div>
-            </section>
+                </section>
+            </main>
         </div>
     )
 }

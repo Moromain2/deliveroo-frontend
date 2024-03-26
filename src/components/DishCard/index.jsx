@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import "./dish-card.css";
 
 const DishCard = ({
@@ -7,11 +9,18 @@ const DishCard = ({
     dish_image,
     dish_popular
 }) => {
+
+    const [cardExpand, setCardExpand] = useState(false);
+
     return (
         <div className="dish-card">
             <div className="dish-body">
                 <h3>{dish_name}</h3>
-                <p>{dish_description}</p>
+                <p onClick={() => { setCardExpand(!cardExpand) }}>
+                    {cardExpand === true || dish_description.length <= 75
+                        ? dish_description
+                        : dish_description.slice(0, 75) + `...`}
+                </p>
                 <div className="dish-details">
                     <span className="dish-price">{dish_price} €</span>
                     {dish_popular === true &&
